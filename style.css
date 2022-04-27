@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #e5e5e5;
+}
+header{
+    background: #f8f9fa;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
+}
+a.navbar-brand {
+    width: 70%;
+}
+.logo-img{
+    width: 19%;
+}
+
+section{
+    margin-bottom: 40px;
+}
+/* HOME SECTION */
+.home{
+    position: relative;
+}
+.home img{
+    width: 100%;
+    height: 500px;
+}
+.home::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+}
+.home h2 {
+    position: absolute;
+    bottom: 154px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    font-size: 60px;
+}
+
+/* WHO WE ARE SECTION */
+.who-we{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.who{
+    width: 88%;
+}
+.who-img{
+    width: 50%;
+}
+.who-we-are img {
+    width: 412px;
+    height: 262px;
+    border-radius: 5px;
+}
+
+/* WHAT WE DO SECTION */
+.imag{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 0.5rem;
+    
+}
+.imge img {
+    width: 98%;
+    height: 218px;
+    border-radius: 17px;
+ 
+}
+
+/* FOOTER SECTION */
+footer{
+    background: #000;
+    padding: 20px;
+}
+.footer-img{
+    color: #fff;
+}
+.footer-al{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-al ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-al ul li {
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+.footer-ab{
+    color: #fff;
+    width: 30%;
+}
+.second-al{
+    color: #fff;
+    width: 30%;
+}
+.fa {
+    font-size: 23px;
+    margin-top: 20px;
+}
+.footer-ab p{
+    margin: 0px!important;
+}
+.foot1 {
+    width: 30%;
+}
+
+@media(max-width:880px){
+    .home h2 {
+        font-size: 30px;
+    }
+    .who-we{
+        grid-template-columns: repeat(1, auto);
+    }
+    .who{
+        width: 100%;
+    }
+    .who-img{
+        width: 100%;
+        text-align: center;
+    }
+    .who-we-are img {
+        width: 100%;
+        height: 225px;
+        border-radius: 5px;
+    }
+    .imag {
+        grid-template-columns: repeat(2,auto);
+    }
+    .second-al {
+        width: 100%;
+    }
+    .footer-al {
+     
+        flex-direction: column;
+    }
+}
+@media(max-width: 600px){
+    
+    .second-al ul{
+        padding: 0px;
+    }
+    .imge img {
+        height: 105px;
+    }
+    .footer-ab{
+        width: 100%;
+    }
+}
